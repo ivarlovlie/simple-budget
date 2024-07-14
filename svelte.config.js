@@ -8,7 +8,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$components: './src/components',
-			$utils: './src/utils'
+			$utils: './src/utils',
+			$strings: "./src/lib/paraglide/messages"
 		}
 	}
 };

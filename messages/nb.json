@@ -1,3 +1,11 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"loginTab": "Logg inn",
+	"signUpTab": "Opprett konto",
+	"usernameLabel": "Brukernavn",
+	"passwordLabel": "Passord",
+	"emailLabel": "E-post",
+	"submit": "Send",
+	"or": "Eller",
+	"requiredField": "Påkrevd felt"
 }

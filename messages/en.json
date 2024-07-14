@@ -1,3 +1,11 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"loginHeading": "Login",
+	"signUpHeading": "Sign up",
+	"usernameLabel": "Username",
+	"passwordLabel": "Password",
+	"emailLabel": "Email",
+	"submit": "Submit",
+	"or": "Or",
+	"requiredField": "Required field"
 }
