@@ -1,5 +1,5 @@
 <script lang="ts">
-import { cn } from "$utils/ui.js";
+import { cn } from "$utils/ui";
 import { Button as ButtonPrimitive } from "bits-ui";
 import { type Events, type Props, buttonVariants } from "./index.js";
 

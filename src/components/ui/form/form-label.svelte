@@ -1,7 +1,7 @@
 <script lang="ts">
 import { Label } from "$components/ui/label/index.js";
 import * as m from "$strings";
-import { cn } from "$utils/ui.js";
+import { cn } from "$utils/ui";
 import type { Label as LabelPrimitive } from "bits-ui";
 import { getFormControl } from "formsnap";
 
@@ -10,7 +10,7 @@ type $$Props = LabelPrimitive.Props & { required?: boolean };
 const className: $$Props["class"] = undefined;
 export { className as class };
 
-export const required = false;
+export const required: boolean = false;
 
 const { labelAttrs } = getFormControl();
 </script>

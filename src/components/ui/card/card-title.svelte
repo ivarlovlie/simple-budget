@@ -1,5 +1,5 @@
 <script lang="ts">
-import { cn } from "$utils/ui.js";
+import { cn } from "$utils/ui";
 import type { HTMLAttributes } from "svelte/elements";
 import type { HeadingLevel } from "./index.js";
 

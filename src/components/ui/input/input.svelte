@@ -1,5 +1,5 @@
 <script lang="ts">
-import { cn } from "$utils/ui.js";
+import { cn } from "$utils/ui";
 import type { HTMLInputAttributes } from "svelte/elements";
 import type { InputEvents } from "./index.js";
 
@@ -7,7 +7,7 @@ type $$Props = HTMLInputAttributes;
 type $$Events = InputEvents;
 
 const className: $$Props["class"] = undefined;
-export const value: $$Props["value"] = undefined;
+export let value: $$Props["value"] = undefined;
 export { className as class };
 
 // Workaround for https://github.com/sveltejs/svelte/issues/9305

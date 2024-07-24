@@ -1,6 +1,6 @@
 <script lang="ts">
-import { cn } from "$utils/ui.js";
-import type * as FormPrimitive from "formsnap";
+import { cn } from "$utils/ui";
+import * as FormPrimitive from "formsnap";
 
 type $$Props = FormPrimitive.FieldErrorsProps & {
 	errorClasses?: string | undefined | null;

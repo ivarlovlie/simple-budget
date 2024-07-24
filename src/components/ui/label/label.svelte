@@ -1,6 +1,6 @@
 <script lang="ts">
-import { cn } from "$utils/ui.js";
-import type { Label as LabelPrimitive } from "bits-ui";
+import { cn } from "$utils/ui";
+import { Label as LabelPrimitive } from "bits-ui";
 
 type $$Props = LabelPrimitive.Props;
 

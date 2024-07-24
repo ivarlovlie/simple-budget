@@ -1,13 +1,13 @@
 <script lang="ts">
 import { cn } from "$utils/ui";
-import type { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
+import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
 import Check from "svelte-radix/Check.svelte";
 
 type $$Props = DropdownMenuPrimitive.CheckboxItemProps;
 type $$Events = DropdownMenuPrimitive.CheckboxItemEvents;
 
 const className: $$Props["class"] = undefined;
-export const checked: $$Props["checked"] = undefined;
+export let checked: $$Props["checked"] = undefined;
 export { className as class };
 </script>
 
