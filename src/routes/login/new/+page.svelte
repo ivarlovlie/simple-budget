@@ -4,7 +4,7 @@
 	export const signUpSchema = z.object({
 		username: z.string(),
 		password: z.string(),
-		email: z.string().email().optional()
+		email: z.string().email(m.invalidEmail()).optional().or(z.literal(''))
 	});
 
 	export type SignUpFormSchema = typeof signUpSchema;

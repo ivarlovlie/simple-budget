@@ -1,11 +1,19 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"loginTab": "Logg inn",
-	"signUpTab": "Opprett konto",
+	"loginHeading": "Logg inn",
+	"signUpHeading": "Opprett konto",
 	"usernameLabel": "Brukernavn",
 	"passwordLabel": "Passord",
-	"emailLabel": "E-post",
+	"emailLabel": "E-postaddresse",
 	"submit": "Send",
 	"or": "Eller",
-	"requiredField": "Påkrevd felt"
+	"requiredField": "Påkrevd felt",
+	"invalidEmail": "Ugyldig e-postaddresse",
+	"chooseLanguage": "Velg språk",
+	"chooseTheme": "Velg utseende",
+	"useNbLang": "Bruk Norsk Bokmål",
+	"useEnLang": "Use English language",
+	"useSystemTheme": "Bruk systemet's utseende",
+	"useDarkTheme": "Bruk mørkt utseende",
+	"useLightTheme": "Bruk lyst utseende"
 }

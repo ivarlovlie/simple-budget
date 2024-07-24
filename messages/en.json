@@ -7,5 +7,13 @@
 	"emailLabel": "Email",
 	"submit": "Submit",
 	"or": "Or",
-	"requiredField": "Required field"
+	"requiredField": "Required field",
+	"invalidEmail": "Invalid email",
+	"chooseLanguage": "Choose language",
+	"chooseTheme": "Choose theme",
+	"useNbLang": "Bruk Norsk bokmål",
+	"useEnLang": "Use english language",
+	"useSystemTheme": "Use system theme",
+	"useDarkTheme": "Use dark theme",
+	"useLightTheme": "Use light theme"
 }
