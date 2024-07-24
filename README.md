@@ -1,5 +1,7 @@
 # Simple Budget
-
+[![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
+![](https://github.com/ivarlovlie/simple-budget/actions/workflows/biome.yml/badge.svg)
 ## Developing
 
 Use [bun](https://bun.sh/docs) to manage packages for, build and run the project.
