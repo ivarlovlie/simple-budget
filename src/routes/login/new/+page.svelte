@@ -1,13 +1,13 @@
 <script context="module" lang="ts">
-	import { z } from 'zod';
+import { z } from "zod";
 
-	export const signUpSchema = z.object({
-		username: z.string(),
-		password: z.string(),
-		email: z.string().email(m.invalidEmail()).optional().or(z.literal(''))
-	});
+export const signUpSchema = z.object({
+	username: z.string(),
+	password: z.string(),
+	email: z.string().email(m.invalidEmail()).optional().or(z.literal("")),
+});
 
-	export type SignUpFormSchema = typeof signUpSchema;
+export type SignUpFormSchema = typeof signUpSchema;
 </script>
 
 <script lang="ts">

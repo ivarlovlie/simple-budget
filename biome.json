@@ -1,0 +1,41 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"ignore": [
+			".svelte-kit",
+			"build",
+			"messages",
+			"drizzle",
+			"src/lib/paraglide"
+		]
+	},
+	"linter": {
+		"ignore": [
+			".svelte-kit",
+			"build",
+			"messages",
+			"drizzle",
+			"src/lib/paraglide"
+		],
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"overrides": [
+		{
+			"include": ["*.svelte"],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					}
+				}
+			}
+		}
+	]
+}

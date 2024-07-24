@@ -1,7 +1,7 @@
 <script lang="ts">
-	import * as Card from '$components/ui/card';
-	import * as m from '$strings';
-	import { page } from '$app/stores';
+import { page } from "$app/stores";
+import * as Card from "$components/ui/card";
+import * as m from "$strings";
 </script>
 
 <section class="full m-1 max-w-96 sm:m-4">

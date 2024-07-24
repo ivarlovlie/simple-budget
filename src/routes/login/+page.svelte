@@ -1,12 +1,12 @@
 <script context="module" lang="ts">
-	import { z } from 'zod';
+import { z } from "zod";
 
-	export const loginSchema = z.object({
-		username: z.string(),
-		password: z.string()
-	});
+export const loginSchema = z.object({
+	username: z.string(),
+	password: z.string(),
+});
 
-	export type LoginFormSchema = typeof loginSchema;
+export type LoginFormSchema = typeof loginSchema;
 </script>
 
 <script lang="ts">

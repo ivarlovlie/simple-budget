@@ -1,18 +1,18 @@
 <script lang="ts">
-	import type { Label as LabelPrimitive } from 'bits-ui';
-	import { getFormControl } from 'formsnap';
-	import { Label } from '$components/ui/label/index.js';
-	import { cn } from '$utils/ui.js';
-	import * as m from '$strings';
+import { Label } from "$components/ui/label/index.js";
+import * as m from "$strings";
+import { cn } from "$utils/ui.js";
+import type { Label as LabelPrimitive } from "bits-ui";
+import { getFormControl } from "formsnap";
 
-	type $$Props = LabelPrimitive.Props & { required?: boolean };
+type $$Props = LabelPrimitive.Props & { required?: boolean };
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+const className: $$Props["class"] = undefined;
+export { className as class };
 
-	export let required = false;
+export const required = false;
 
-	const { labelAttrs } = getFormControl();
+const { labelAttrs } = getFormControl();
 </script>
 
 <Label

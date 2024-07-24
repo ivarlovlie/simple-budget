@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Sun from 'svelte-radix/Sun.svelte';
-	import Moon from 'svelte-radix/Moon.svelte';
-	import { resetMode, setMode } from 'mode-watcher';
-	import { Button } from '$components/ui/button';
-	import * as DropdownMenu from '$components/ui/dropdown-menu';
-	import * as m from '$strings';
+import { Button } from "$components/ui/button";
+import * as DropdownMenu from "$components/ui/dropdown-menu";
+import * as m from "$strings";
+import { resetMode, setMode } from "mode-watcher";
+import Moon from "svelte-radix/Moon.svelte";
+import Sun from "svelte-radix/Sun.svelte";
 </script>
 
 <DropdownMenu.Root>

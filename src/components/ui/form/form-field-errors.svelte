@@ -1,18 +1,18 @@
 <script lang="ts">
-	import * as FormPrimitive from "formsnap";
-	import { cn } from "$utils/ui.js";
+import { cn } from "$utils/ui.js";
+import type * as FormPrimitive from "formsnap";
 
-	type $$Props = FormPrimitive.FieldErrorsProps & {
-		errorClasses?: string | undefined | null;
-	};
+type $$Props = FormPrimitive.FieldErrorsProps & {
+	errorClasses?: string | undefined | null;
+};
 
-	let className: $$Props["class"] = undefined;
-	export { className as class };
-	export let errorClasses: $$Props["class"] = undefined;
+const className: $$Props["class"] = undefined;
+export { className as class };
+export const errorClasses: $$Props["class"] = undefined;
 </script>
 
 <FormPrimitive.FieldErrors
-	class={cn("text-[0.8rem] font-medium text-destructive", className)}
+	class={cn('text-[0.8rem] font-medium text-destructive', className)}
 	{...$$restProps}
 	let:errors
 	let:fieldErrorsAttrs
