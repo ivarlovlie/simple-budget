@@ -66,7 +66,7 @@ echo
 
 bun run build
 
-docker build -t $IMAGE_NAME:$NEW_VERSION .
+docker build --platform linux/amd64 -t $IMAGE_NAME:$NEW_VERSION .
 
 docker tag $IMAGE_NAME:$NEW_VERSION $HUB_NAME:$NEW_VERSION
 
