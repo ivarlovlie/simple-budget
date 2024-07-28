@@ -2,8 +2,8 @@
 import { page } from "$app/stores";
 import { Button } from "$components/ui/button";
 import * as DropdownMenu from "$components/ui/dropdown-menu";
-import { i18n } from "$lib/i18n.js";
-import { availableLanguageTags, languageTag } from "$lib/paraglide/runtime.js";
+import { i18n } from "$lib/i18n";
+import { availableLanguageTags, languageTag } from "$lib/paraglide/runtime";
 import * as m from "$strings";
 import FlagNorway from "./flag-norway.svelte";
 import FlagUsa from "./flag-usa.svelte";

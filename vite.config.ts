@@ -1,6 +1,7 @@
 import { paraglide } from "@inlang/paraglide-sveltekit/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 import autoprefixer from "autoprefixer";
+import postcssNesting from "postcss-nesting";
 import tailwindcss from "tailwindcss";
 import { defineConfig } from "vitest/config";
 
@@ -12,6 +13,9 @@ export default defineConfig({
 	test: {
 		include: ["src/**/*.{test,spec}.{js,ts}"],
 	},
+	resolve: {
+		preserveSymlinks: true,
+	},
 	css: {
 		postcss: {
 			plugins: [
@@ -19,6 +23,7 @@ export default defineConfig({
 				tailwindcss(),
 				//But others, like autoprefixer, need to run after,
 				autoprefixer,
+				postcssNesting,
 			],
 		},
 	},

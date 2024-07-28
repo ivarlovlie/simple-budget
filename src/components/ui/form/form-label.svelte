@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Label } from "$components/ui/label/index.js";
+import { Label } from "$components/ui/label/index";
 import * as m from "$strings";
 import { cn } from "$utils/ui";
 import type { Label as LabelPrimitive } from "bits-ui";

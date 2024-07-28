@@ -64,6 +64,10 @@ fi
 echo "Building docker image"
 echo
 
+bun run test
+
+bun run build
+
 docker build -t $IMAGE_NAME:$NEW_VERSION .
 
 docker tag $IMAGE_NAME:$NEW_VERSION $HUB_NAME:$NEW_VERSION
