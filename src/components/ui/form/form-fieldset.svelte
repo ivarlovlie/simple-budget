@@ -5,15 +5,15 @@ type U = FormPath<T>;
 </script>
 
 <script lang="ts" generics="T extends Record<string, unknown>, U extends FormPath<T>">
-	import * as FormPrimitive from 'formsnap';
-	import { cn } from '$utils/ui';
+	import * as FormPrimitive from "formsnap";
+	import { cn } from "$utils/ui.js";
 
 	type $$Props = FormPrimitive.FieldsetProps<T, U>;
 
 	export let form: SuperForm<T>;
 	export let name: U;
 
-	let className: $$Props['class'] = undefined;
+	let className: $$Props["class"] = undefined;
 	export { className as class };
 </script>
 
@@ -24,7 +24,7 @@ type U = FormPath<T>;
 	let:errors
 	let:tainted
 	let:value
-	class={cn('space-y-2', className)}
+	class={cn("space-y-2", className)}
 >
 	<slot {constraints} {errors} {tainted} {value} />
 </FormPrimitive.Fieldset>

@@ -1,5 +1,5 @@
 <script lang="ts">
-import * as Button from "$components/ui/button/index";
+import * as Button from "$components/ui/button/index.js";
 
 type $$Props = Button.Props;
 type $$Events = Button.Events;

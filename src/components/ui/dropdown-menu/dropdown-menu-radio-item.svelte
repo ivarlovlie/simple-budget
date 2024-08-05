@@ -1,19 +1,19 @@
 <script lang="ts">
-import { cn } from "$utils/ui";
+import { cn } from "$utils/ui.js";
 import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
 import DotFilled from "svelte-radix/DotFilled.svelte";
 
 type $$Props = DropdownMenuPrimitive.RadioItemProps;
 type $$Events = DropdownMenuPrimitive.RadioItemEvents;
 
-const className: $$Props["class"] = undefined;
+let className: $$Props["class"] = undefined;
 export let value: DropdownMenuPrimitive.RadioItemProps["value"];
 export { className as class };
 </script>
 
 <DropdownMenuPrimitive.RadioItem
 	class={cn(
-		'relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground data-[disabled]:opacity-50',
+		"data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
 		className
 	)}
 	{value}

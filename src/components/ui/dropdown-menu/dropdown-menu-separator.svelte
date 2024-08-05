@@ -1,11 +1,14 @@
 <script lang="ts">
-import { cn } from "$utils/ui";
+import { cn } from "$utils/ui.js";
 import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
 
 type $$Props = DropdownMenuPrimitive.SeparatorProps;
 
-const className: $$Props["class"] = undefined;
+let className: $$Props["class"] = undefined;
 export { className as class };
 </script>
 
-<DropdownMenuPrimitive.Separator class={cn('-mx-1 my-1 h-px bg-muted', className)} {...$$restProps} />
+<DropdownMenuPrimitive.Separator
+	class={cn("bg-muted -mx-1 my-1 h-px", className)}
+	{...$$restProps}
+/>

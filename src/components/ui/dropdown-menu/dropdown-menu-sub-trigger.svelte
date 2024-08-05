@@ -1,5 +1,5 @@
 <script lang="ts">
-import { cn } from "$utils/ui";
+import { cn } from "$utils/ui.js";
 import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
 import ChevronRight from "svelte-radix/ChevronRight.svelte";
 
@@ -8,15 +8,15 @@ type $$Props = DropdownMenuPrimitive.SubTriggerProps & {
 };
 type $$Events = DropdownMenuPrimitive.SubTriggerEvents;
 
-const className: $$Props["class"] = undefined;
-export const inset: $$Props["inset"] = undefined;
+let className: $$Props["class"] = undefined;
+export let inset: $$Props["inset"] = undefined;
 export { className as class };
 </script>
 
 <DropdownMenuPrimitive.SubTrigger
 	class={cn(
-		'flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[highlighted]:bg-accent data-[state=open]:bg-accent data-[highlighted]:text-accent-foreground data-[state=open]:text-accent-foreground',
-		inset && 'pl-8',
+		"data-[highlighted]:bg-accent data-[state=open]:bg-accent data-[highlighted]:text-accent-foreground data-[state=open]:text-accent-foreground flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none",
+		inset && "pl-8",
 		className
 	)}
 	{...$$restProps}

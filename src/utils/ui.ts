@@ -14,10 +14,10 @@ type FlyAndScaleParams = {
 	duration?: number;
 };
 
-export function flyAndScale(
+export const flyAndScale = (
 	node: Element,
 	params: FlyAndScaleParams = { y: -8, x: 0, start: 0.95, duration: 150 },
-): TransitionConfig {
+): TransitionConfig => {
 	const style = getComputedStyle(node);
 	const transform = style.transform === "none" ? "" : style.transform;
 
@@ -59,4 +59,4 @@ export function flyAndScale(
 		},
 		easing: cubicOut,
 	};
-}
+};

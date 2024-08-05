@@ -1,12 +1,12 @@
 <script lang="ts">
-import { cn } from "$utils/ui";
+import { cn } from "$utils/ui.js";
 import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
 import Check from "svelte-radix/Check.svelte";
 
 type $$Props = DropdownMenuPrimitive.CheckboxItemProps;
 type $$Events = DropdownMenuPrimitive.CheckboxItemEvents;
 
-const className: $$Props["class"] = undefined;
+let className: $$Props["class"] = undefined;
 export let checked: $$Props["checked"] = undefined;
 export { className as class };
 </script>
@@ -14,7 +14,7 @@ export { className as class };
 <DropdownMenuPrimitive.CheckboxItem
 	bind:checked
 	class={cn(
-		'relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground data-[disabled]:opacity-50',
+		"data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
 		className
 	)}
 	{...$$restProps}
