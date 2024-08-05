@@ -3,8 +3,8 @@ import type { Config } from "drizzle-kit";
 export default {
 	schema: "./src/lib/db/schema/*",
 	out: "./drizzle",
-	driver: "pg",
+	dialect: "postgresql",
 	dbCredentials: {
-		connectionString: process.env.DB_URL as string,
+		url: process.env.DB_URL as string,
 	},
 } satisfies Config;

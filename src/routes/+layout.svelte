@@ -10,13 +10,13 @@ import { ModeWatcher } from "mode-watcher";
 </script>
 
 <ParaglideJS {i18n}>
-	<ModeWatcher />
-	<Sonner />
-	<aside class="fixed right-0 top-0 flex">
-		<LangChanger />
-		<StyleChanger />
-	</aside>
-	<main>
-		<slot />
-	</main>
+  <ModeWatcher />
+  <Sonner />
+  <aside class="fixed right-0 top-0 flex">
+    <LangChanger />
+    <StyleChanger />
+  </aside>
+  <main>
+    <slot />
+  </main>
 </ParaglideJS>
