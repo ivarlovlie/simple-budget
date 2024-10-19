@@ -10,6 +10,7 @@
 		"verbatimModuleSyntax": true,
 		"sourceMap": true,
 		"strict": true,
+		"lib": ["esnext", "dom"],
 		"types": ["svelte", "vite/client"],
 		"moduleResolution": "bundler"
 	}

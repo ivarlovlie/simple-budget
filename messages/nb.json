@@ -6,14 +6,19 @@
 	"passwordLabel": "Passord",
 	"emailLabel": "E-postaddresse",
 	"submit": "Send",
+	"loading": "Laster",
 	"or": "Eller",
-	"requiredField": "Påkrevd felt",
-	"invalidEmail": "Ugyldig e-postaddresse",
 	"chooseLanguage": "Velg språk",
 	"chooseTheme": "Velg utseende",
 	"useNbLang": "Bruk Norsk Bokmål",
 	"useEnLang": "Use English language",
 	"useSystemTheme": "Bruk systemet's utseende",
 	"useDarkTheme": "Bruk mørkt utseende",
-	"useLightTheme": "Bruk lyst utseende"
+	"useLightTheme": "Bruk lyst utseende",
+	"errorInvalidUsername": "Ugyldig brukernavn, bruk bokstaver, tall, _ eller -",
+	"errorRequiredField": "Påkrevd felt",
+	"errorInvalidEmail": "Ugyldig e-postaddresse",
+	"errorInvalidPassword": "Passordet må være minst fem bokstaver og ett tall",
+	"errorUsernameExists": "Brukernavnet er i bruk",
+	"errorUnexpectedSystem": "Uventet systemfeil, prøv igjen snart"
 }

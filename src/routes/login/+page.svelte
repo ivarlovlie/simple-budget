@@ -13,10 +13,9 @@ export type LoginFormSchema = typeof loginSchema;
   import * as Form from "$components/ui/form";
   import { type SuperValidated, type Infer, superForm } from "sveltekit-superforms";
   import { zodClient } from "sveltekit-superforms/adapters";
-
   import * as m from "$strings";
   import { Input } from "$components/ui/input";
-  import { browserlog } from "$utils/loggers/browser";
+  import LoaderCircle from "svelte-lucide/LoaderCircle.svelte";
 
   export let data: SuperValidated<Infer<LoginFormSchema>>;
 
@@ -25,9 +24,7 @@ export type LoginFormSchema = typeof loginSchema;
     dataType: "json",
   });
 
-  browserlog("Browser log");
-
-  const { form: formData, enhance } = form;
+  const { form: formData, enhance, submitting } = form;
 </script>
 
 <form method="POST" use:enhance>
@@ -46,6 +43,11 @@ export type LoginFormSchema = typeof loginSchema;
     <Form.FieldErrors />
   </Form.Field>
   <div class="flex w-full justify-end">
-    <Form.Button>{m.submit()}</Form.Button>
+    <Form.Button disabled={$submitting}>
+      {#if $submitting}
+        <LoaderCircle class="mr-2 h-4 w-4 animate-spin" />
+      {/if}
+      {$submitting ? m.loading() : m.submit()}
+    </Form.Button>
   </div>
 </form>

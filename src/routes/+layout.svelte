@@ -1,7 +1,6 @@
 <script lang="ts">
 import { i18n } from "$lib/i18n";
 import { ParaglideJS } from "@inlang/paraglide-sveltekit";
-
 import "../app.pcss";
 import LangChanger from "$components/lang-changer/index.svelte";
 import Sonner from "$components/sonner.svelte";

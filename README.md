@@ -11,3 +11,8 @@ Install `bun` with `curl -fsSL https://bun.sh/install | bash`  (windows: `powers
 Run `bunx lefthook install` before your first commit.
 
 We require all commits to pass checks ran by lefthook, if your commit is non-compliant, make it compliant.
+
+
+## TODO when bun permits
+
+- Run scripts with Bun runtime

@@ -4,22 +4,11 @@
 		"enabled": true
 	},
 	"formatter": {
-		"ignore": [
-			".svelte-kit",
-			"build",
-			"messages",
-			"drizzle",
-			"src/lib/paraglide"
-		]
+		"lineWidth": 120,
+		"ignore": [".svelte-kit", "build", "messages", "drizzle", "src/lib/paraglide"]
 	},
 	"linter": {
-		"ignore": [
-			".svelte-kit",
-			"build",
-			"messages",
-			"drizzle",
-			"src/lib/paraglide"
-		],
+		"ignore": [".svelte-kit", "build", "messages", "drizzle", "src/lib/paraglide"],
 		"enabled": true,
 		"rules": {
 			"recommended": true

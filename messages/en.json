@@ -6,14 +6,19 @@
 	"passwordLabel": "Password",
 	"emailLabel": "Email",
 	"submit": "Submit",
+	"loading": "Loading",
 	"or": "Or",
-	"requiredField": "Required field",
-	"invalidEmail": "Invalid email",
 	"chooseLanguage": "Choose language",
 	"chooseTheme": "Choose theme",
 	"useNbLang": "Bruk Norsk bokmål",
-	"useEnLang": "Use english language",
+	"useEnLang": "Use English language",
 	"useSystemTheme": "Use system theme",
 	"useDarkTheme": "Use dark theme",
-	"useLightTheme": "Use light theme"
+	"useLightTheme": "Use light theme",
+	"errorRequiredField": "Required field",
+	"errorInvalidEmail": "Invalid email",
+	"errorInvalidUsername": "Username is invalid, use characters, numbers, _ or -",
+	"errorInvalidPassword": "Password needs to be minimum five characters and one numeric character",
+	"errorUsernameExists": "Username is unavailable",
+	"errorUnexpectedSystem": "Unexpected system error, try again soon"
 }

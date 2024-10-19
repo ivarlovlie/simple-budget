@@ -10,20 +10,20 @@ type $$Props = LabelPrimitive.Props & { required?: boolean };
 const className: $$Props["class"] = undefined;
 export { className as class };
 
-export const required: boolean = false;
+export let required = false;
 
 const { labelAttrs } = getFormControl();
 </script>
 
 <Label
-	{...$labelAttrs}
-	class={cn('data-[fs-error]:text-destructive', className)}
-	{...$$restProps}
-	aria-required={required ?? false}
-	title={$$restProps.title ? $$restProps.title + '. ' + m.requiredField() : m.requiredField()}
+  {...$labelAttrs}
+  class={cn("data-[fs-error]:text-destructive", className)}
+  {...$$restProps}
+  aria-required={required ?? false}
+  title={$$restProps.title ? $$restProps.title + ". " + m.errorRequiredField() : m.errorRequiredField()}
 >
-	<slot {labelAttrs} />
-	{#if required ?? false}
-		<span class="text-red-500">&ast;</span>
-	{/if}
+  <slot {labelAttrs} />
+  {#if required ?? false}
+    <span class="text-red-500">&ast;</span>
+  {/if}
 </Label>

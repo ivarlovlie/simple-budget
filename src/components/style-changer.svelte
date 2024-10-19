@@ -3,8 +3,8 @@ import { Button } from "$components/ui/button";
 import * as DropdownMenu from "$components/ui/dropdown-menu";
 import * as m from "$strings";
 import { resetMode, setMode } from "mode-watcher";
-import Moon from "svelte-radix/Moon.svelte";
-import Sun from "svelte-radix/Sun.svelte";
+import Moon from "svelte-lucide/Moon.svelte";
+import Sun from "svelte-lucide/Sun.svelte";
 </script>
 
 <DropdownMenu.Root>
